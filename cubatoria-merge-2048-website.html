@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubatoria Merge 2048 - Play Online for Free | MicSunPlay</title>
+    <meta name="description" content="Play Cubatoria Merge 2048 online for free! Combine colorful cubes to reach 2048 in this addictive puzzle game. No download required, play directly in your browser.">
+    <link rel="canonical" href="https://micsunplay.vip/cubatoria-merge-2048">
+    <meta name="keywords" content="Cubatoria Merge 2048, merge game, puzzle game, 2048 game, online game, free game">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Apple-inspired color scheme */
+        :root {
+            --apple-blue: #0071e3;
+            --apple-gray: #f5f5f7;
+            --apple-black: #1d1d1f;
+            --apple-white: #ffffff;
+            --apple-light-gray: #86868b;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--apple-gray);
+            color: var(--apple-black);
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+        }
+        
+        header {
+            background-color: var(--apple-blue);
+            color: var(--apple-white);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        .game-container {
+            background-color: var(--apple-white);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .game-frame {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%; /* Aspect ratio for the iframe */
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .game-frame iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--apple-blue);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--apple-blue);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .game-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        .game-instructions {
+            background-color: var(--apple-white);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        
+        .game-features {
+            background-color: var(--apple-white);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .feature-list li:before {
+            content: "•";
+            color: var(--apple-blue);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        footer {
+            background-color: var(--apple-black);
+            color: var(--apple-white);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            color: var(--apple-light-gray);
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .game-info {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            h1 {
+                font-size: 3.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 2rem;
+            }
+        }
+        
+        /* Animation for improved UX */
+        .animate-fade {
+            opacity: 0;
+            animation: fadeIn 0.6s ease-in forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Button styles */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--apple-blue);
+            color: var(--apple-white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #0062c0;
+        }
+    </style>
+</head>
+<body>
+    <header class="animate-fade">
+        <h1>Cubatoria Merge 2048</h1>
+        <p class="tagline">Merge colorful cubes, reach 2048, and challenge your puzzle-solving skills!</p>
+    </header>
+    
+    <main class="container">
+        <section class="game-container animate-fade" style="animation-delay: 0.2s;">
+            <div class="game-frame">
+                <iframe src="https://play.gamepix.com/cubatoria-merge-2048/embed?sid=1" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="game-info">
+            <div class="game-instructions animate-fade" style="animation-delay: 0.4s;">
+                <h2>How to Play</h2>
+                <p>Cubatoria Merge 2048 is an addictive puzzle game that combines the classic 2048 mechanics with colorful 3D cubes. The objective is simple yet challenging:</p>
+                <p>Merge identical cubes to create higher-value cubes, aiming to reach the coveted 2048 cube. The game requires strategic thinking, planning ahead, and careful cube placement to succeed.</p>
+                <p>Controls are straightforward: on mobile, simply tap and swipe to move and merge cubes; on desktop, use your mouse to drag and position cubes precisely where you want them.</p>
+                <a href="#" class="cta-button">Play Now</a>
+            </div>
+            
+            <div class="game-features animate-fade" style="animation-delay: 0.6s;">
+                <h2>Game Features</h2>
+                <ul class="feature-list">
+                    <li>Colorful 3D cube graphics with smooth animations</li>
+                    <li>Challenging yet accessible gameplay for all ages</li>
+                    <li>Progressive difficulty that adapts to your skill level</li>
+                    <li>No download required - play directly in your browser</li>
+                    <li>Fully optimized for both desktop and mobile devices</li>
+                    <li>Addictive gameplay that will keep you engaged for hours</li>
+                    <li>Regular updates with new challenges and features</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="animate-fade" style="animation-delay: 0.8s;">
+            <h2>About Cubatoria Merge 2048</h2>
+            <p>Cubatoria Merge 2048 takes the classic 2048 puzzle concept to a whole new dimension with its colorful 3D cubes and engaging merge mechanics. This brain-teasing game challenges your spatial awareness and strategic thinking as you combine identical cubes to reach higher values.</p>
+            <p>Perfect for quick gaming sessions or extended play, Cubatoria Merge 2048 offers a satisfying blend of casual fun and strategic depth. Each game is unique, presenting fresh challenges that will test your puzzle-solving abilities.</p>
+            <p>Whether you're a puzzle enthusiast or just looking for an entertaining way to pass the time, Cubatoria Merge 2048 delivers an immersive experience that's easy to learn but difficult to master.</p>
+        </section>
+        
+        <section class="animate-fade" style="animation-delay: 1s;">
+            <h2>Strategy Tips</h2>
+            <p>To excel at Cubatoria Merge 2048, keep these strategies in mind:</p>
+            <p>Focus on building higher-value cubes in one corner, which helps maintain order and prevents blocking yourself. Always plan a few moves ahead to anticipate new cube placements. When possible, create multiple pairs of the same value to set up chain reactions. Remember that patience is key - sometimes waiting for the right cube is better than making a hasty move.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Enjoy playing Cubatoria Merge 2048 on MicSunPlay.vip!</p>
+        <p class="copyright">© 2025 MicSunPlay.vip - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
